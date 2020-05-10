@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: '../../android_commons.gradle'
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // Gradle automatically adds 'android.test.runner' as a dependency.
+    useLibrary 'android.test.runner'
+
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
+}
+
+dependencies {
+    // KOTLIN
+    implementation KotlinLibraries.kotlin
+    // ROOM
+    implementation Libraries.roomRunTime
+    kapt Libraries.roomCompiler
+    implementation Libraries.roomKtx
+    implementation AndroidLibraries.lifecycleExtensions
+    // GSON
+    implementation Libraries.gson
+    // DATA MODULE
+    implementation project(Modules.model)
+    // KOIN
+    implementation Libraries.koin
+    implementation Libraries.koinViewModel
+    // TEST
+    androidTestImplementation TestLibraries.androidTestRunner
+    androidTestImplementation TestLibraries.junit
+    androidTestImplementation TestLibraries.koin
+    androidTestImplementation TestLibraries.archCoreTest
+}

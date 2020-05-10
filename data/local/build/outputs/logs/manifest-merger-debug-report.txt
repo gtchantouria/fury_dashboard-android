@@ -1,0 +1,146 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+MERGED from [:data:model] /Users/gtachantouria/android/dashboard/data/model/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.room:room-ktx:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/a974fec1210859a313d6bac5f6bd563f/jetified-room-ktx-2.2.5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [org.koin:koin-android-viewmodel:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/2bb17817190ff6bbef0ac767e9cf553c/jetified-koin-android-viewmodel-1.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3021f6f71981153306ac6febdd8b398e/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [org.koin:koin-android-scope:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0c766c253dc37cede87c27bf1fb6e321/jetified-koin-android-scope-1.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [org.koin:koin-android:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c5ab26322f6ec685be7e4817fccdac15/jetified-koin-android-1.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/de4db30fea0a8b51b11682b633b83b42/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c826310687fbcbd10f152bbc98637443/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b80bbbbcc89d7feb9ea4119edb0f74d/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/97a88409a32301e23537395fa37fa40a/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/00d7594d2783056e1d11b816508bdb0d/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/262a00b2d427c05c4f1175029394c068/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/827ba0e32b6a96fe615a7723f3e08486/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/45e6bae32602cee61654220b364f0d49/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3670efd28d6babecfe549ab8a7780f4c/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0b90ff7bc4851f255e61dfb264b25ab6/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8e4dcf266392319d9381a3030397ff07/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/e09c8f870be1f34ecd08dc4cec63946e/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c98899c0312548d59636f2aa7ffff5dd/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/f670ba12eff66917abcbe1a4740e1bb1/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/99c8265854e8b6f1d8f56a7ec0057845/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/7d837be853b4f979bf31c449712e3010/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+	package
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:2:11-53
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:1-2:55
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+MERGED from [:data:model] /Users/gtachantouria/android/dashboard/data/model/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:data:model] /Users/gtachantouria/android/dashboard/data/model/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.room:room-ktx:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/a974fec1210859a313d6bac5f6bd563f/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/a974fec1210859a313d6bac5f6bd563f/jetified-room-ktx-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [org.koin:koin-android-viewmodel:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/2bb17817190ff6bbef0ac767e9cf553c/jetified-koin-android-viewmodel-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android-viewmodel:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/2bb17817190ff6bbef0ac767e9cf553c/jetified-koin-android-viewmodel-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3021f6f71981153306ac6febdd8b398e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3021f6f71981153306ac6febdd8b398e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [org.koin:koin-android-scope:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0c766c253dc37cede87c27bf1fb6e321/jetified-koin-android-scope-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android-scope:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0c766c253dc37cede87c27bf1fb6e321/jetified-koin-android-scope-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c5ab26322f6ec685be7e4817fccdac15/jetified-koin-android-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c5ab26322f6ec685be7e4817fccdac15/jetified-koin-android-1.0.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/de4db30fea0a8b51b11682b633b83b42/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/de4db30fea0a8b51b11682b633b83b42/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c826310687fbcbd10f152bbc98637443/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c826310687fbcbd10f152bbc98637443/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b80bbbbcc89d7feb9ea4119edb0f74d/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b80bbbbcc89d7feb9ea4119edb0f74d/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/97a88409a32301e23537395fa37fa40a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/97a88409a32301e23537395fa37fa40a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/00d7594d2783056e1d11b816508bdb0d/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/00d7594d2783056e1d11b816508bdb0d/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/262a00b2d427c05c4f1175029394c068/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/262a00b2d427c05c4f1175029394c068/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/827ba0e32b6a96fe615a7723f3e08486/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/827ba0e32b6a96fe615a7723f3e08486/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/45e6bae32602cee61654220b364f0d49/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/45e6bae32602cee61654220b364f0d49/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3670efd28d6babecfe549ab8a7780f4c/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3670efd28d6babecfe549ab8a7780f4c/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0b90ff7bc4851f255e61dfb264b25ab6/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0b90ff7bc4851f255e61dfb264b25ab6/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8e4dcf266392319d9381a3030397ff07/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8e4dcf266392319d9381a3030397ff07/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/e09c8f870be1f34ecd08dc4cec63946e/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/e09c8f870be1f34ecd08dc4cec63946e/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c98899c0312548d59636f2aa7ffff5dd/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/c98899c0312548d59636f2aa7ffff5dd/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/f670ba12eff66917abcbe1a4740e1bb1/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/f670ba12eff66917abcbe1a4740e1bb1/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/99c8265854e8b6f1d8f56a7ec0057845/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/99c8265854e8b6f1d8f56a7ec0057845/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/7d837be853b4f979bf31c449712e3010/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/7d837be853b4f979bf31c449712e3010/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		ADDED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+		INJECTED from /Users/gtachantouria/android/dashboard/data/local/src/main/AndroidManifest.xml
+application
+ADDED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [org.koin:koin-android-viewmodel:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/2bb17817190ff6bbef0ac767e9cf553c/jetified-koin-android-viewmodel-1.0.2/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-android-viewmodel:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/2bb17817190ff6bbef0ac767e9cf553c/jetified-koin-android-viewmodel-1.0.2/AndroidManifest.xml:7:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3021f6f71981153306ac6febdd8b398e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/3021f6f71981153306ac6febdd8b398e/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [org.koin:koin-android-scope:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0c766c253dc37cede87c27bf1fb6e321/jetified-koin-android-scope-1.0.2/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-android-scope:1.0.2] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/0c766c253dc37cede87c27bf1fb6e321/jetified-koin-android-scope-1.0.2/AndroidManifest.xml:7:5-20
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/7d837be853b4f979bf31c449712e3010/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/7d837be853b4f979bf31c449712e3010/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/209e78942724960ca58b9bbb9490f41b/core-1.1.0/AndroidManifest.xml:24:18-86
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/8b1cde5ce39ec093faf871247296f34f/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/gtachantouria/.gradle/caches/transforms-2/files-2.1/98621b41f663d85c1b6489fd8c8ab5fb/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
