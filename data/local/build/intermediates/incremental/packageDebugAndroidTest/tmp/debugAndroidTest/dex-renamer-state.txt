@@ -1,7 +1,0 @@
-#Sun May 10 11:12:26 ART 2020
-base.0=/Users/gtachantouria/android/dashboard/data/local/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/out/classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/Users/gtachantouria/android/dashboard/data/local/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/out/classes.dex

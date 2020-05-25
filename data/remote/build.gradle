@@ -1,7 +1,42 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply from: '../../android_commons.gradle'
+
+android {
+    compileSdkVersion Versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+
+        release {
+            debuggable false
+        }
+
+        mds {
+            debuggable true
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+        unitTests.all {
+            //limit the test classes to try avoiding memory leaks
+            forkEvery 50
+        }
+    }
+
+    lintOptions {
+        abortOnError true
+    }
+}
 
 dependencies {
     // KOTLIN

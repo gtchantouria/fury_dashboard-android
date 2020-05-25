@@ -1,21 +1,50 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
-apply from: '../android_commons.gradle'
 
 android {
     defaultConfig {
+
+    }
+}
+
+android {
+    compileSdkVersion Versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode Releases.versionCode
+        versionName Releases.versionName
         applicationId ApplicationId.id
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    dataBinding {
-        enabled true
+    buildTypes {
+        debug {
+            debuggable true
+        }
+
+        release {
+            debuggable false
+        }
+
+        mds {
+            debuggable true
+        }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+
+    resourcePrefix 'login_domain_'
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+        unitTests.all {
+            //limit the test classes to try avoiding memory leaks
+            forkEvery 50
+        }
+    }
+
+    lintOptions {
+        abortOnError true
     }
 }
 

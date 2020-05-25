@@ -2,6 +2,11 @@ object ApplicationId {
     val id = "com.mercadolibre.dashboard"
 }
 
+object Project {
+    val androidTarget = "28"
+    val minApiLevel = 23
+}
+
 object Modules {
     val app = ":app"
 
@@ -55,7 +60,6 @@ object Versions {
     val room = "2.2.5"
     val safeArgs = "2.1.0-alpha01"
     val targetSdk = 28
-    val timber = "4.7.1"
 }
 
 object Libraries {
