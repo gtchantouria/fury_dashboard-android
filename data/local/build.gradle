@@ -1,41 +1,10 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-kapt'
-
+apply from: '../../android_commons.gradle'
 
 android {
-    compileSdkVersion Versions.compileSdk
-
     defaultConfig {
-        minSdkVersion Versions.minSdk
-        targetSdkVersion Versions.targetSdk
-    }
-
-    buildTypes {
-        debug {
-            debuggable true
-        }
-
-        release {
-            debuggable false
-        }
-
-        mds {
-            debuggable true
-        }
-    }
-
-    testOptions {
-        unitTests.returnDefaultValues = true
-        unitTests.includeAndroidResources = true
-        unitTests.all {
-            //limit the test classes to try avoiding memory leaks
-            forkEvery 50
-        }
-    }
-
-    lintOptions {
-        abortOnError true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 }
 
@@ -45,8 +14,6 @@ dependencies {
     implementation Libraries.roomRunTime
     implementation Libraries.roomKtx
     implementation AndroidLibraries.lifecycleExtensions
-    // TEST MODULE
-    androidTestImplementation project(Modules.commonTest)
     // GSON
     implementation Libraries.gson
     // DATA MODULE
@@ -55,6 +22,7 @@ dependencies {
     implementation Libraries.koin
     implementation Libraries.koinViewModel
     // TEST
+    androidTestImplementation project(Modules.commonTest)
     androidTestImplementation TestLibraries.androidTestRunner
     androidTestImplementation TestLibraries.junit
     androidTestImplementation TestLibraries.koin

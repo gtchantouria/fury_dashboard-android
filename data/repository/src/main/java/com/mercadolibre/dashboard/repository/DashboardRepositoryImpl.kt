@@ -26,7 +26,7 @@ class DashboardRepositoryImpl( private val datasource: DashboardDatasource,
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
 
-            override fun loadFromDb(): List<Release> = dao.getAll()
+            override suspend fun loadFromDb(): List<Release> = dao.getAll()
 
             override fun shouldFetch(data: List<Release>?): Boolean = data == null || data.isEmpty() || forceRefresh
 

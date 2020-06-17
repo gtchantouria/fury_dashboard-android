@@ -1,42 +1,8 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion Versions.compileSdk
-
-    defaultConfig {
-        minSdkVersion Versions.minSdk
-        targetSdkVersion Versions.targetSdk
-    }
-
-    buildTypes {
-        debug {
-            debuggable true
-        }
-
-        release {
-            debuggable false
-        }
-
-        mds {
-            debuggable true
-        }
-    }
-
-    testOptions {
-        unitTests.returnDefaultValues = true
-        unitTests.includeAndroidResources = true
-        unitTests.all {
-            //limit the test classes to try avoiding memory leaks
-            forkEvery 50
-        }
-    }
-
-    lintOptions {
-        abortOnError true
-    }
-}
+apply plugin: 'com.android.library'
+apply from: '../android_commons.gradle'
 
 dependencies {
+    //implementation project(Modules.model)
     implementation AndroidLibraries.lifecycleExtensions
     implementation TestLibraries.androidTestRunner
     implementation TestLibraries.espresso

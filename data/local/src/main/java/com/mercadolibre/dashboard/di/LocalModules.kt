@@ -1,4 +1,4 @@
-package com.mercadolibre.dashboard.di
+package com.mercadolibre.dashboard.local.di
 
 import com.mercadolibre.dashboard.database.DashboardDatabase
 import org.koin.android.ext.koin.androidContext

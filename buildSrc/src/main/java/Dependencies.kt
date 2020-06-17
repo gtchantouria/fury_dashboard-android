@@ -33,7 +33,7 @@ object Versions {
     val androidJunit = "1.1.1"
     val androidTestRunner = "1.1.2-alpha02"
     val appCompat = "1.1.0"
-    val archCoreTest = "2.0.0"
+    val archCoreTest = "2.1.0"
     val compileSdk = 28
     val constraintLayout = "1.1.3"
     val coreKtx = "1.2.0"
@@ -46,18 +46,17 @@ object Versions {
     val gson = "2.8.5"
     val junit = "4.12"
     val koin = "1.0.2"
-    val kotlin = "1.3.70"
+    val kotlin = "1.3.21"
     val lifecycle = "2.2.0"
-    val minSdk = 23
+    val minSdk = 26
     val mockk = "1.9.2"
     val mockwebserver = "2.7.5"
     val nav = "2.0.0"
     val okHttp = "4.5.0"
     val recyclerview = "1.0.0"
-    val retrofit = "2.8.1"
+    val retrofit = "2.5.0"
     val retrofitCoroutines = "0.9.2"
-    val retrofitGson = "2.4.0"
-    val room = "2.2.5"
+    val room = "2.1.0-alpha06"
     val safeArgs = "2.1.0-alpha01"
     val targetSdk = 28
 }
@@ -74,7 +73,7 @@ object Libraries {
     val retrofitCoroutineAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.retrofitCoroutines}"
     val gson = "com.google.code.gson:gson:${Versions.gson}"
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-    val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitGson}"
+    val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     val httpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     // GLIDE
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"

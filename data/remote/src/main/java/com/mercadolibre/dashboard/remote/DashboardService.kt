@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface DashboardService {
     @GET("api/releases")
-    suspend fun getReleases(): List<Release>
+    fun getReleases(): List<Release>
 }

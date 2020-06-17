@@ -9,6 +9,11 @@ android {
         versionCode Releases.versionCode
         versionName Releases.versionName
     }
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
 }
 
 dependencies {

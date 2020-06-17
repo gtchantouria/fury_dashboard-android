@@ -1,0 +1,14 @@
+[
+  {
+    "name": "nav_graph_detail_feature",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "nav_graph_home_feature",
+    "navigationXmlIds": [
+      "nav_graph_detail_feature"
+    ],
+    "deepLinks": []
+  }
+]
