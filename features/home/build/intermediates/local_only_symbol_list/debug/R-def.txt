@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+dimen card_corner_radius
+dimen card_elevation
+dimen card_margin
+dimen horizontal_margin
+dimen text_margin
+dimen vertical_margin
+drawable ic_error_black_24dp
+drawable list_image
+drawable profile_pic
+id fragment_home_image_empty_list
+id fragment_home_rv
+id fragment_home_swipe_to_refresh
+id fragment_home_text_view_empty_list
+id release_manager
+id release_version
+layout fragment_home
+layout item_home
+string release_version

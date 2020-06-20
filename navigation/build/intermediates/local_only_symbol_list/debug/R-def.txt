@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+id action_detailFragment_to_imageDetailFragment
+id action_homeFragment_to_detailFragment
+id detailFragment
+id homeFragment
+id imageDetailFragment
+id nav_graph_detail_feature
+id nav_graph_home_feature
+navigation nav_graph_detail_feature
+navigation nav_graph_home_feature
