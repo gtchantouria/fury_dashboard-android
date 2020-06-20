@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
-                name="release"
-                type="com.mercadolibre.dashboard.model.Release" />
+            name="release"
+            type="com.mercadolibre.dashboard.model.Release" />
+
         <variable
-                name="vm"
-                type="com.mercadolibre.dashboard.home.HomeViewModel" />
+            name="vm"
+            type="com.mercadolibre.dashboard.home.HomeViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/item_home_root"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
+            android:layout_marginBottom="8dp"
             android:onClick="@{() -> vm.releasesClicksOnItem(release) }"
             tools:context=".HomeFragment">
-        <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                tools:srcCompat="@tools:sample/avatars"
-                app:imageUrl="@{release.releaseManager.email}"
-                android:id="@+id/imageView"
-                android:layout_marginTop="16dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:scaleType="centerCrop"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="16dp"/>
-        <TextView
-                android:text="@{release.releaseManager.name}"
-                android:layout_width="0dp"
+
+            <TextView
+                android:id="@+id/release_version"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text='@{@string/release_version(Integer.toString(release.major), Integer.toString(release.minor), Integer.toString(release.minor))}'
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/release_manager"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                android:layout_marginStart="32dp"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                android:text="@{`RM` + release.releaseManager.name}"
+                app:layout_constraintStart_toStartOf="@+id/release_version"
+                app:layout_constraintTop_toBottomOf="@+id/release_version" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
 </layout>

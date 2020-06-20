@@ -16,6 +16,10 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
         sViewsWithIds = null;
     }
     // views
+    @NonNull
+    private final com.google.android.material.card.MaterialCardView mboundView0;
+    @NonNull
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView1;
     // variables
     @Nullable
     private final android.view.View.OnClickListener mCallback1;
@@ -24,17 +28,19 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
     // Inverse Binding Event Handlers
 
     public ItemHomeBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private ItemHomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.ImageView) bindings[1]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
+            , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
             );
-        this.imageView.setTag(null);
-        this.itemHomeRoot.setTag(null);
-        this.textView.setTag(null);
+        this.mboundView0 = (com.google.android.material.card.MaterialCardView) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[1];
+        this.mboundView1.setTag(null);
+        this.releaseManager.setTag(null);
+        this.releaseVersion.setTag(null);
         setRootTag(root);
         // listeners
         mCallback1 = new com.mercadolibre.dashboard.features.home.generated.callback.OnClickListener(this, 1);
@@ -62,11 +68,11 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.vm == variableId) {
-            setVm((com.mercadolibre.dashboard.home.HomeViewModel) variable);
-        }
-        else if (BR.release == variableId) {
+        if (BR.release == variableId) {
             setRelease((com.mercadolibre.dashboard.model.Release) variable);
+        }
+        else if (BR.vm == variableId) {
+            setVm((com.mercadolibre.dashboard.home.HomeViewModel) variable);
         }
         else {
             variableSet = false;
@@ -74,20 +80,20 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
             return variableSet;
     }
 
-    public void setVm(@Nullable com.mercadolibre.dashboard.home.HomeViewModel Vm) {
-        this.mVm = Vm;
-        synchronized(this) {
-            mDirtyFlags |= 0x1L;
-        }
-        notifyPropertyChanged(BR.vm);
-        super.requestRebind();
-    }
     public void setRelease(@Nullable com.mercadolibre.dashboard.model.Release Release) {
         this.mRelease = Release;
         synchronized(this) {
-            mDirtyFlags |= 0x2L;
+            mDirtyFlags |= 0x1L;
         }
         notifyPropertyChanged(BR.release);
+        super.requestRebind();
+    }
+    public void setVm(@Nullable com.mercadolibre.dashboard.home.HomeViewModel Vm) {
+        this.mVm = Vm;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.vm);
         super.requestRebind();
     }
 
@@ -105,40 +111,57 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String releaseReleaseManagerEmail = null;
-        com.mercadolibre.dashboard.home.HomeViewModel vm = mVm;
         com.mercadolibre.dashboard.model.Release release = mRelease;
+        int releaseMinor = 0;
+        java.lang.String releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = null;
         java.lang.String releaseReleaseManagerName = null;
+        int releaseMajor = 0;
+        com.mercadolibre.dashboard.home.HomeViewModel vm = mVm;
+        java.lang.String integerToStringReleaseMajor = null;
+        java.lang.String javaLangStringRMReleaseReleaseManagerName = null;
         com.mercadolibre.dashboard.model.ReleaseManager releaseReleaseManager = null;
+        java.lang.String integerToStringReleaseMinor = null;
 
-        if ((dirtyFlags & 0x6L) != 0) {
+        if ((dirtyFlags & 0x5L) != 0) {
 
 
 
                 if (release != null) {
+                    // read release.minor
+                    releaseMinor = release.getMinor();
+                    // read release.major
+                    releaseMajor = release.getMajor();
                     // read release.releaseManager
                     releaseReleaseManager = release.getReleaseManager();
                 }
 
 
+                // read Integer.toString(release.minor)
+                integerToStringReleaseMinor = java.lang.Integer.toString(releaseMinor);
+                // read Integer.toString(release.major)
+                integerToStringReleaseMajor = java.lang.Integer.toString(releaseMajor);
                 if (releaseReleaseManager != null) {
-                    // read release.releaseManager.email
-                    releaseReleaseManagerEmail = releaseReleaseManager.getEmail();
                     // read release.releaseManager.name
                     releaseReleaseManagerName = releaseReleaseManager.getName();
                 }
+
+
+                // read @android:string/release_version
+                releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = releaseVersion.getResources().getString(R.string.release_version, integerToStringReleaseMajor, integerToStringReleaseMinor, integerToStringReleaseMinor);
+                // read ("RM") + (release.releaseManager.name)
+                javaLangStringRMReleaseReleaseManagerName = ("RM") + (releaseReleaseManagerName);
         }
         // batch finished
-        if ((dirtyFlags & 0x6L) != 0) {
-            // api target 1
-
-            com.mercadolibre.dashboard.home.views.HomeBinding.loadImage(this.imageView, releaseReleaseManagerEmail);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.textView, releaseReleaseManagerName);
-        }
         if ((dirtyFlags & 0x4L) != 0) {
             // api target 1
 
-            this.itemHomeRoot.setOnClickListener(mCallback1);
+            this.mboundView1.setOnClickListener(mCallback1);
+        }
+        if ((dirtyFlags & 0x5L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.releaseManager, javaLangStringRMReleaseReleaseManagerName);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.releaseVersion, releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor);
         }
     }
     // Listener Stub Implementations
@@ -165,8 +188,8 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): vm
-        flag 1 (0x2L): release
+        flag 0 (0x1L): release
+        flag 1 (0x2L): vm
         flag 2 (0x3L): null
     flag mapping end*/
     //end

@@ -4,7 +4,6 @@ dependencies {
     // KOTLIN
     implementation KotlinLibraries.kotlin
     // NETWORK
-    implementation Libraries.gson
     implementation Libraries.retrofit
     implementation Libraries.retrofitGsonConverter
     implementation Libraries.httpLoggingInterceptor

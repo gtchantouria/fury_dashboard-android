@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class VersionPatches (
 	@PrimaryKey
 	val _id : Int,
-	val versionCodes : String?,
+	val versionCodes : List<String>?,
 	val number : Int,
 	val milestone : Int,
 	val status : String,

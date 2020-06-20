@@ -23,7 +23,7 @@ class DashboardRepositoryImpl( private val datasource: DashboardDatasource,
             override suspend fun createCallAsync(): List<Release> = datasource.getReleases()
 
             override suspend fun saveCallResults(items: List<Release>) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                dao.saveReleases(items)
             }
 
             override suspend fun loadFromDb(): List<Release> = dao.getAll()

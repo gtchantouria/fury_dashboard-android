@@ -4,11 +4,9 @@ package com.mercadolibre.dashboard.features.home.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -20,13 +18,10 @@ import java.lang.Object;
 
 public abstract class ItemHomeBinding extends ViewDataBinding {
   @NonNull
-  public final ImageView imageView;
+  public final TextView releaseManager;
 
   @NonNull
-  public final ConstraintLayout itemHomeRoot;
-
-  @NonNull
-  public final TextView textView;
+  public final TextView releaseVersion;
 
   @Bindable
   protected Release mRelease;
@@ -35,11 +30,10 @@ public abstract class ItemHomeBinding extends ViewDataBinding {
   protected HomeViewModel mVm;
 
   protected ItemHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView imageView, ConstraintLayout itemHomeRoot, TextView textView) {
+      TextView releaseManager, TextView releaseVersion) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.imageView = imageView;
-    this.itemHomeRoot = itemHomeRoot;
-    this.textView = textView;
+    this.releaseManager = releaseManager;
+    this.releaseVersion = releaseVersion;
   }
 
   public abstract void setRelease(@Nullable Release release);
