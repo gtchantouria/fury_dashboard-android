@@ -113,12 +113,12 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
         }
         com.mercadolibre.dashboard.model.Release release = mRelease;
         int releaseMinor = 0;
+        java.lang.String javaLangStringRMReleaseReleaseManagerName = null;
         java.lang.String releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = null;
         java.lang.String releaseReleaseManagerName = null;
         int releaseMajor = 0;
         com.mercadolibre.dashboard.home.HomeViewModel vm = mVm;
         java.lang.String integerToStringReleaseMajor = null;
-        java.lang.String javaLangStringRMReleaseReleaseManagerName = null;
         com.mercadolibre.dashboard.model.ReleaseManager releaseReleaseManager = null;
         java.lang.String integerToStringReleaseMinor = null;
 
@@ -148,8 +148,8 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
 
                 // read @android:string/release_version
                 releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = releaseVersion.getResources().getString(R.string.release_version, integerToStringReleaseMajor, integerToStringReleaseMinor, integerToStringReleaseMinor);
-                // read ("RM") + (release.releaseManager.name)
-                javaLangStringRMReleaseReleaseManagerName = ("RM") + (releaseReleaseManagerName);
+                // read ("RM: ") + (release.releaseManager.name)
+                javaLangStringRMReleaseReleaseManagerName = ("RM: ") + (releaseReleaseManagerName);
         }
         // batch finished
         if ((dirtyFlags & 0x4L) != 0) {

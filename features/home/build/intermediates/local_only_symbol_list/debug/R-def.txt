@@ -1,5 +1,11 @@
 R_DEF: Internal format may change without notice
 local
+dimen card_corner_radius
+dimen card_elevation
+dimen card_margin
+dimen horizontal_margin
+dimen text_margin
+dimen vertical_margin
 drawable ic_error_black_24dp
 drawable list_image
 drawable profile_pic

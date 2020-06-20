@@ -17,13 +17,14 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="3dp"
-        app:cardElevation="2dp">
+        android:layout_margin="@dimen/card_margin"
+        android:background="?android:selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:onClick="@{() -> vm.releasesClicksOnItem(release) }"
             tools:context=".HomeFragment">
 
@@ -32,9 +33,7 @@
                 style="@style/TextAppearance.MaterialComponents.Headline6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_margin="@dimen/text_margin"
                 android:text='@{@string/release_version(Integer.toString(release.major), Integer.toString(release.minor), Integer.toString(release.minor))}'
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -44,8 +43,8 @@
                 style="@style/TextAppearance.MaterialComponents.Headline6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@{`RM` + release.releaseManager.name}"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@{`RM: ` + release.releaseManager.name}"
                 app:layout_constraintStart_toStartOf="@+id/release_version"
                 app:layout_constraintTop_toBottomOf="@+id/release_version" />
 

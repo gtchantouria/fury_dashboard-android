@@ -825,6 +825,9 @@ int dimen abc_text_size_subhead_material 0x0
 int dimen abc_text_size_subtitle_material_toolbar 0x0
 int dimen abc_text_size_title_material 0x0
 int dimen abc_text_size_title_material_toolbar 0x0
+int dimen card_corner_radius 0x0
+int dimen card_elevation 0x0
+int dimen card_margin 0x0
 int dimen cardview_compat_inset_shadow 0x0
 int dimen cardview_default_elevation 0x0
 int dimen cardview_default_radius 0x0
@@ -891,6 +894,7 @@ int dimen hint_alpha_material_dark 0x0
 int dimen hint_alpha_material_light 0x0
 int dimen hint_pressed_alpha_material_dark 0x0
 int dimen hint_pressed_alpha_material_light 0x0
+int dimen horizontal_margin 0x0
 int dimen item_touch_helper_max_drag_scroll_per_frame 0x0
 int dimen item_touch_helper_swipe_escape_max_velocity 0x0
 int dimen item_touch_helper_swipe_escape_velocity 0x0
@@ -957,6 +961,7 @@ int dimen notification_small_icon_size_as_large 0x0
 int dimen notification_subtext_size 0x0
 int dimen notification_top_pad 0x0
 int dimen notification_top_pad_large_text 0x0
+int dimen text_margin 0x0
 int dimen tooltip_corner_radius 0x0
 int dimen tooltip_horizontal_padding 0x0
 int dimen tooltip_margin 0x0
@@ -965,6 +970,7 @@ int dimen tooltip_precise_anchor_threshold 0x0
 int dimen tooltip_vertical_padding 0x0
 int dimen tooltip_y_offset_non_touch 0x0
 int dimen tooltip_y_offset_touch 0x0
+int dimen vertical_margin 0x0
 int drawable abc_ab_share_pack_mtrl_alpha 0x0
 int drawable abc_action_bar_item_background_material 0x0
 int drawable abc_btn_borderless_material 0x0
