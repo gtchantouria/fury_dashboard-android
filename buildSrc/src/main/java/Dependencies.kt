@@ -2,11 +2,6 @@ object ApplicationId {
     val id = "com.mercadolibre.dashboard"
 }
 
-object Project {
-    val androidTarget = "28"
-    val minApiLevel = 23
-}
-
 object Modules {
     val app = ":app"
 
@@ -44,11 +39,9 @@ object Versions {
     val glide = "4.9.0"
     val gradle = "3.6.1"
     val gson = "2.8.5"
-    val junit = "4.12"
     val koin = "1.0.2"
     val kotlin = "1.3.21"
     val lifecycle = "2.2.0"
-    val material = "1.1.0"
     val minSdk = 26
     val mockk = "1.9.2"
     val mockwebserver = "2.7.5"
@@ -98,11 +91,7 @@ object AndroidLibraries {
     val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 
-    //val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
-    //val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
-    //val lifecycleLiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
-    //val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
-
+    // RECYCLER AND MORE
     val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
     val swiper = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiper}"
 
