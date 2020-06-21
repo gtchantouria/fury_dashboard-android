@@ -40,7 +40,7 @@ object Versions {
     val gradle = "3.6.1"
     val gson = "2.8.5"
     val koin = "1.0.2"
-    val kotlin = "1.3.21"
+    val kotlin = "1.3.61"
     val lifecycle = "2.2.0"
     val minSdk = 26
     val mockk = "1.9.2"
@@ -50,7 +50,7 @@ object Versions {
     val recyclerview = "1.0.0"
     val retrofit = "2.6.0"
     val retrofitCoroutines = "0.9.2"
-    val room = "2.1.0-alpha06"
+    val room = "2.2.5"
     val safeArgs = "2.1.0-alpha01"
     val swiper = "1.0.0"
     val targetSdk = 28
