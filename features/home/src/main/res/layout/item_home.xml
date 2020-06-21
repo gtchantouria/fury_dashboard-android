@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <import type="java.util.List"/>
         <variable
             name="release"
             type="com.mercadolibre.dashboard.model.Release" />
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_margin"
-                android:text='@{@string/release_version(Integer.toString(release.major), Integer.toString(release.minor), Integer.toString(release.minor))}'
+                android:text='@{release.versionPatches != null ? @string/release_version(Integer.toString(release.major), Integer.toString(release.minor), Integer.toString(release.versionPatches.size - 1)) : @string/release_version(Integer.toString(release.major), Integer.toString(release.minor), Integer.toString(0))}'
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

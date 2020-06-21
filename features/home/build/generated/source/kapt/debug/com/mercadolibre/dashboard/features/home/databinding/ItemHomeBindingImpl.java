@@ -112,44 +112,101 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
             mDirtyFlags = 0;
         }
         com.mercadolibre.dashboard.model.Release release = mRelease;
-        int releaseMinor = 0;
-        java.lang.String javaLangStringRMReleaseReleaseManagerName = null;
-        java.lang.String releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = null;
-        java.lang.String releaseReleaseManagerName = null;
+        java.lang.String integerToStringReleaseVersionPatchesSizeInt1 = null;
         int releaseMajor = 0;
         com.mercadolibre.dashboard.home.HomeViewModel vm = mVm;
-        java.lang.String integerToStringReleaseMajor = null;
-        com.mercadolibre.dashboard.model.ReleaseManager releaseReleaseManager = null;
+        java.lang.String releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1 = null;
         java.lang.String integerToStringReleaseMinor = null;
+        java.lang.String releaseVersionPatchesJavaLangObjectNullReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1ReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0 = null;
+        int releaseMinor = 0;
+        java.lang.String javaLangStringRMReleaseReleaseManagerName = null;
+        java.lang.String releaseReleaseManagerName = null;
+        boolean releaseVersionPatchesJavaLangObjectNull = false;
+        java.lang.String integerToStringReleaseMajor = null;
+        int releaseVersionPatchesSizeInt1 = 0;
+        java.util.List<com.mercadolibre.dashboard.model.VersionPatches> releaseVersionPatches = null;
+        int releaseVersionPatchesSize = 0;
+        com.mercadolibre.dashboard.model.ReleaseManager releaseReleaseManager = null;
+        java.lang.String releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0 = null;
 
         if ((dirtyFlags & 0x5L) != 0) {
 
 
 
                 if (release != null) {
-                    // read release.minor
-                    releaseMinor = release.getMinor();
-                    // read release.major
-                    releaseMajor = release.getMajor();
+                    // read release.versionPatches
+                    releaseVersionPatches = release.getVersionPatches();
                     // read release.releaseManager
                     releaseReleaseManager = release.getReleaseManager();
                 }
 
 
-                // read Integer.toString(release.minor)
-                integerToStringReleaseMinor = java.lang.Integer.toString(releaseMinor);
-                // read Integer.toString(release.major)
-                integerToStringReleaseMajor = java.lang.Integer.toString(releaseMajor);
+                // read release.versionPatches != null
+                releaseVersionPatchesJavaLangObjectNull = (releaseVersionPatches) != (null);
+            if((dirtyFlags & 0x5L) != 0) {
+                if(releaseVersionPatchesJavaLangObjectNull) {
+                        dirtyFlags |= 0x10L;
+                }
+                else {
+                        dirtyFlags |= 0x8L;
+                }
+            }
                 if (releaseReleaseManager != null) {
                     // read release.releaseManager.name
                     releaseReleaseManagerName = releaseReleaseManager.getName();
                 }
 
 
-                // read @android:string/release_version
-                releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor = releaseVersion.getResources().getString(R.string.release_version, integerToStringReleaseMajor, integerToStringReleaseMinor, integerToStringReleaseMinor);
                 // read ("RM: ") + (release.releaseManager.name)
                 javaLangStringRMReleaseReleaseManagerName = ("RM: ") + (releaseReleaseManagerName);
+        }
+        // batch finished
+
+        if ((dirtyFlags & 0x18L) != 0) {
+
+                if (release != null) {
+                    // read release.major
+                    releaseMajor = release.getMajor();
+                    // read release.minor
+                    releaseMinor = release.getMinor();
+                }
+
+
+                // read Integer.toString(release.major)
+                integerToStringReleaseMajor = java.lang.Integer.toString(releaseMajor);
+                // read Integer.toString(release.minor)
+                integerToStringReleaseMinor = java.lang.Integer.toString(releaseMinor);
+
+            if ((dirtyFlags & 0x8L) != 0) {
+
+                    // read @android:string/release_version
+                    releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0 = releaseVersion.getResources().getString(R.string.release_version, integerToStringReleaseMajor, integerToStringReleaseMinor, java.lang.Integer.toString(0));
+            }
+        }
+        if ((dirtyFlags & 0x10L) != 0) {
+
+                if (releaseVersionPatches != null) {
+                    // read release.versionPatches.size
+                    releaseVersionPatchesSize = releaseVersionPatches.size();
+                }
+
+
+                // read (release.versionPatches.size) - (1)
+                releaseVersionPatchesSizeInt1 = (releaseVersionPatchesSize) - (1);
+
+
+                // read Integer.toString((release.versionPatches.size) - (1))
+                integerToStringReleaseVersionPatchesSizeInt1 = java.lang.Integer.toString(releaseVersionPatchesSizeInt1);
+
+
+                // read @android:string/release_version
+                releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1 = releaseVersion.getResources().getString(R.string.release_version, integerToStringReleaseMajor, integerToStringReleaseMinor, integerToStringReleaseVersionPatchesSizeInt1);
+        }
+
+        if ((dirtyFlags & 0x5L) != 0) {
+
+                // read release.versionPatches != null ? @android:string/release_version : @android:string/release_version
+                releaseVersionPatchesJavaLangObjectNullReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1ReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0 = ((releaseVersionPatchesJavaLangObjectNull) ? (releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1) : (releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0));
         }
         // batch finished
         if ((dirtyFlags & 0x4L) != 0) {
@@ -161,7 +218,7 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.releaseManager, javaLangStringRMReleaseReleaseManagerName);
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.releaseVersion, releaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseMinor);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.releaseVersion, releaseVersionPatchesJavaLangObjectNullReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringReleaseVersionPatchesSizeInt1ReleaseVersionAndroidStringReleaseVersionIntegerToStringReleaseMajorIntegerToStringReleaseMinorIntegerToStringInt0);
         }
     }
     // Listener Stub Implementations
@@ -191,6 +248,8 @@ public class ItemHomeBindingImpl extends ItemHomeBinding implements com.mercadol
         flag 0 (0x1L): release
         flag 1 (0x2L): vm
         flag 2 (0x3L): null
+        flag 3 (0x4L): release.versionPatches != null ? @android:string/release_version : @android:string/release_version
+        flag 4 (0x5L): release.versionPatches != null ? @android:string/release_version : @android:string/release_version
     flag mapping end*/
     //end
 }
