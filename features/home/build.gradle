@@ -17,5 +17,5 @@ android {
 dependencies {
     // GLIDE
     implementation Libraries.glide
-    implementation Libraries.material
+    implementation AndroidLibraries.swiper
 }

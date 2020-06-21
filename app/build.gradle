@@ -29,6 +29,4 @@ dependencies {
     implementation AndroidLibraries.appCompat
     implementation AndroidLibraries.navigation
     implementation AndroidLibraries.navigationFrag
-    // MATERIAL
-    implementation Libraries.material
 }

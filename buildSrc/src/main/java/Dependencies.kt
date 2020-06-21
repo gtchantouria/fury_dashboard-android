@@ -48,7 +48,7 @@ object Versions {
     val koin = "1.0.2"
     val kotlin = "1.3.21"
     val lifecycle = "2.2.0"
-    val material = "1.0.0-rc01"
+    val material = "1.1.0"
     val minSdk = 26
     val mockk = "1.9.2"
     val mockwebserver = "2.7.5"
@@ -59,6 +59,7 @@ object Versions {
     val retrofitCoroutines = "0.9.2"
     val room = "2.1.0-alpha06"
     val safeArgs = "2.1.0-alpha01"
+    val swiper = "1.0.0"
     val targetSdk = 28
 }
 
@@ -78,8 +79,6 @@ object Libraries {
     val httpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     // GLIDE
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
-    // MATERIAL
-    val material = "com.google.android.material:material:${Versions.material}"
 }
 
 object KotlinLibraries {
@@ -94,9 +93,20 @@ object AndroidLibraries {
     val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-    val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+
+    // LIFECYCLE
     val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+
+    //val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    //val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    //val lifecycleLiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    //val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
+
     val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
+    val swiper = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiper}"
+
+    // NAVIGATION
     val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.nav}"
     val navigationFrag = "androidx.navigation:navigation-fragment-ktx:${Versions.nav}"
 }
