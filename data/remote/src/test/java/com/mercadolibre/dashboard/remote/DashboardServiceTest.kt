@@ -11,12 +11,25 @@ class DashboardServiceTest: BaseTest() {
     @Test
     fun `validate release data`() {
         mockHttpResponse(mockServer, "dashboard_releases.json", HttpURLConnection.HTTP_OK)
+
         runBlocking {
             val releases = service.getReleases()
 
-            assertEquals(433, releases.get(0)._id)
-            assertEquals(10, releases.get(0).major)
-            assertEquals(107, releases.get(0).minor)
+            assertEquals(433, releases[0]._id)
+            assertEquals(10, releases[0].major)
+            assertEquals(107, releases[0].minor)
+        }
+    }
+
+    @Test
+    fun `validate release metrics data`() {
+        mockHttpResponse(mockServer, "release_metrics.json", HttpURLConnection.HTTP_OK)
+
+        runBlocking {
+            val metrics = service.getReleaseMetrics(450)
+
+            assertEquals(41, metrics.errorsIntroducedCount)
+            assertEquals(310, metrics.errorsSeenCount)
         }
     }
 }

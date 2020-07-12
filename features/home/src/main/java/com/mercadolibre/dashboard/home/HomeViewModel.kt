@@ -27,7 +27,7 @@ class HomeViewModel(private val getReleasesUseCase: GetReleasesUseCase,
     }
 
     // Public Functions
-    fun releasesClicksOnItem(release: Release) = navigate(HomeFragmentDirections.actionHomeFragmentToDetailFragment(release.releaseManager.name))
+    fun releasesClicksOnItem(release: Release) = navigate(HomeFragmentDirections.actionHomeFragmentToDetailFragment(release.versionPatches.last()._id))
     fun releasesRefreshesItems() = getReleases(true)
 
 

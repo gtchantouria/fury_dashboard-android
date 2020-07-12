@@ -49,6 +49,7 @@ object Versions {
     val okHttp = "4.5.0"
     val recyclerview = "1.0.0"
     val retrofit = "2.6.0"
+    val retrofitCoroutines = "0.9.2"
     val room = "2.2.5"
     val safeArgs = "2.1.0-alpha01"
     val swiper = "1.0.0"
@@ -64,6 +65,7 @@ object Libraries {
     val roomRunTime = "androidx.room:room-runtime:${Versions.room}"
     val roomKtx = "androidx.room:room-ktx:${Versions.room}"
     // RETROFIT
+    val retrofitCoroutineAdapter = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.retrofitCoroutines}"
     val gson = "com.google.code.gson:gson:${Versions.gson}"
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"

@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+drawable bg_android
+drawable ic_account_box_black_24dp
+drawable ic_baseline_account_circle_24
+drawable ic_default_avatar
+drawable ic_default_avatar_white
+drawable ic_launcher_background
+id fragment_adoption
+id fragment_crash_rate
+id fragment_detail_avatar
+id fragment_detail_root_view
+id fragment_errors_introduced
+id fragment_total_errros
+id imageView
+id lbl_adoption
+id lbl_crash_rate
+id lbl_error_introduced
+id lbl_total_errors
+layout fragment_detail
+string adoption
+string crash_rate
+string error_introduced
+string total_errors

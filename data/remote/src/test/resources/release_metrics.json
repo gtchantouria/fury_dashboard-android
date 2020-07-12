@@ -1,0 +1,18 @@
+{
+  "flavorId": 1,
+  "display": "Android",
+  "major": 10,
+  "minor": 40,
+  "number": 6,
+  "crashRateThreshold": 0.3,
+  "canejoUrl": "https://tableau.adminml.com/#/site/QA/views/MetricsbyPlatformVersionPlatformVersionSitePlatform/PlatformrateLINE?:iid=2",
+  "status": "rollout",
+  "errorsIntroducedCount": 41,
+  "errorsSeenCount": 310,
+  "sessionsCountInLast24H": 914042,
+  "releaseSessionsCount": 47303224,
+  "totalSessionsCount": 990742,
+  "unhandledSessionsCount": 1498,
+  "sessionsCount": 1,
+  "releases.versionPatches._id": 1204
+}

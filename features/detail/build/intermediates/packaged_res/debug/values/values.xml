@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adoption">Adoption</string>
+    <string name="crash_rate">Crash Rate:</string>
+    <string name="error_introduced">Error Introduced:</string>
+    <string name="total_errors">Total Errors:</string>
+</resources>
