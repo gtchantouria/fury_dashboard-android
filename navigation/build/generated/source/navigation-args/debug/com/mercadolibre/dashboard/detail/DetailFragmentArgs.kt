@@ -3,13 +3,13 @@ package com.mercadolibre.dashboard.detail
 import android.os.Bundle
 import androidx.navigation.NavArgs
 import java.lang.IllegalArgumentException
-import kotlin.String
+import kotlin.Int
 import kotlin.jvm.JvmStatic
 
-data class DetailFragmentArgs(val login: String) : NavArgs {
+data class DetailFragmentArgs(val releaseId: Int) : NavArgs {
     fun toBundle(): Bundle {
         val result = Bundle()
-        result.putString("login", this.login)
+        result.putInt("releaseId", this.releaseId)
         return result
     }
 
@@ -17,16 +17,13 @@ data class DetailFragmentArgs(val login: String) : NavArgs {
         @JvmStatic
         fun fromBundle(bundle: Bundle): DetailFragmentArgs {
             bundle.setClassLoader(DetailFragmentArgs::class.java.classLoader)
-            val __login : String?
-            if (bundle.containsKey("login")) {
-                __login = bundle.getString("login")
-                if (__login == null) {
-                    throw IllegalArgumentException("Argument \"login\" is marked as non-null but was passed a null value.")
-                }
+            val __releaseId : Int
+            if (bundle.containsKey("releaseId")) {
+                __releaseId = bundle.getInt("releaseId")
             } else {
-                throw IllegalArgumentException("Required argument \"login\" is missing and does not have an android:defaultValue")
+                throw IllegalArgumentException("Required argument \"releaseId\" is missing and does not have an android:defaultValue")
             }
-            return DetailFragmentArgs(__login)
+            return DetailFragmentArgs(__releaseId)
         }
     }
 }

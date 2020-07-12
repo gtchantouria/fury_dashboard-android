@@ -12,7 +12,7 @@
         <!-- Go to Detail Fragment (Its graph is responsible to handle response) -->
         <action android:id="@+id/action_homeFragment_to_detailFragment"
                 app:destination="@id/nav_graph_detail_feature">
-            <argument android:name="login" app:argType="string"/>
+            <argument android:name="releaseId" app:argType="integer"/>
         </action>
 
     </fragment>

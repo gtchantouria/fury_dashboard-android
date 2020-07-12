@@ -10,8 +10,7 @@ import com.mercadolibre.dashboard.dao.DashboardDao
 import com.mercadolibre.dashboard.model.*
 
 @Database(
-    entities = [
-        Release::class],
+    entities = [Release::class, Metric::class],
     version = 1,
     exportSchema = false
 )

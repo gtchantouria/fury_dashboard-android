@@ -1,6 +1,7 @@
 package com.mercadolibre.dashboard.model
 
-import androidx.room.*
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "release")
 data class Release (

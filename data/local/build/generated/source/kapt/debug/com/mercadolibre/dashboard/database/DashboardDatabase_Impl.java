@@ -33,13 +33,15 @@ public final class DashboardDatabase_Impl extends DashboardDatabase {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `release` (`_id` INTEGER NOT NULL, `open` INTEGER NOT NULL, `major` INTEGER NOT NULL, `minor` INTEGER NOT NULL, `endDevelopmentDate` TEXT NOT NULL, `flavorId` INTEGER NOT NULL, `releaseManagerId` INTEGER NOT NULL, `versionPatches` TEXT NOT NULL, `releaseManager` TEXT NOT NULL, `flavor` TEXT NOT NULL, PRIMARY KEY(`_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `metric` (`_id` INTEGER NOT NULL, `flavorId` INTEGER NOT NULL, `display` TEXT NOT NULL, `major` INTEGER NOT NULL, `minor` INTEGER NOT NULL, `number` INTEGER NOT NULL, `crashRateThreshold` REAL NOT NULL, `canejoUrl` TEXT NOT NULL, `status` TEXT NOT NULL, `errorsIntroducedCount` INTEGER NOT NULL, `errorsSeenCount` INTEGER NOT NULL, `sessionsCountInLast24H` INTEGER NOT NULL, `releaseSessionsCount` INTEGER NOT NULL, `totalSessionsCount` INTEGER NOT NULL, `unhandledSessionsCount` INTEGER NOT NULL, `sessionsCount` INTEGER NOT NULL, PRIMARY KEY(`_id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '15b74c694a2548e0c6e717aaae5545b7')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '13231cc104a5f46640818042d4219129')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `release`");
+        _db.execSQL("DROP TABLE IF EXISTS `metric`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -98,9 +100,35 @@ public final class DashboardDatabase_Impl extends DashboardDatabase {
                   + " Expected:\n" + _infoRelease + "\n"
                   + " Found:\n" + _existingRelease);
         }
+        final HashMap<String, TableInfo.Column> _columnsMetric = new HashMap<String, TableInfo.Column>(16);
+        _columnsMetric.put("_id", new TableInfo.Column("_id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("flavorId", new TableInfo.Column("flavorId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("display", new TableInfo.Column("display", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("major", new TableInfo.Column("major", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("minor", new TableInfo.Column("minor", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("number", new TableInfo.Column("number", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("crashRateThreshold", new TableInfo.Column("crashRateThreshold", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("canejoUrl", new TableInfo.Column("canejoUrl", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("status", new TableInfo.Column("status", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("errorsIntroducedCount", new TableInfo.Column("errorsIntroducedCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("errorsSeenCount", new TableInfo.Column("errorsSeenCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("sessionsCountInLast24H", new TableInfo.Column("sessionsCountInLast24H", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("releaseSessionsCount", new TableInfo.Column("releaseSessionsCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("totalSessionsCount", new TableInfo.Column("totalSessionsCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("unhandledSessionsCount", new TableInfo.Column("unhandledSessionsCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMetric.put("sessionsCount", new TableInfo.Column("sessionsCount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysMetric = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesMetric = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoMetric = new TableInfo("metric", _columnsMetric, _foreignKeysMetric, _indicesMetric);
+        final TableInfo _existingMetric = TableInfo.read(_db, "metric");
+        if (! _infoMetric.equals(_existingMetric)) {
+          return new RoomOpenHelper.ValidationResult(false, "metric(com.mercadolibre.dashboard.model.Metric).\n"
+                  + " Expected:\n" + _infoMetric + "\n"
+                  + " Found:\n" + _existingMetric);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "15b74c694a2548e0c6e717aaae5545b7", "e945eb7db2a3503f6a0c77b4d0d30743");
+    }, "13231cc104a5f46640818042d4219129", "452c71916015ea6e489c983c78e47ff4");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -113,7 +141,7 @@ public final class DashboardDatabase_Impl extends DashboardDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "release");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "release","metric");
   }
 
   @Override
@@ -123,6 +151,7 @@ public final class DashboardDatabase_Impl extends DashboardDatabase {
     try {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `release`");
+      _db.execSQL("DELETE FROM `metric`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();

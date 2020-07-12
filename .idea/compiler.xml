@@ -10,6 +10,7 @@
       <module name="dashboard.data.model" target="1.8" />
       <module name="dashboard.data.remote" target="1.8" />
       <module name="dashboard.data.repository" target="1.7" />
+      <module name="dashboard.features.detail" target="1.7" />
       <module name="dashboard.features.home" target="1.7" />
       <module name="dashboard.navigation" target="1.7" />
     </bytecodeTargetLevel>

@@ -8,7 +8,7 @@
     <fragment android:id="@+id/detailFragment"
               android:name="com.mercadolibre.dashboard.detail.DetailFragment"
               android:label="Release detail">
-        <argument android:name="login" app:argType="string"/>
+        <argument android:name="releaseId" app:argType="integer"/>
         <action android:id="@+id/action_detailFragment_to_imageDetailFragment"
                 app:destination="@id/imageDetailFragment"
                 app:enterAnim="@anim/nav_default_pop_enter_anim"
